@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import diego from "./diego.jpg"
+import Confetti from "react-confetti"
+import {AiFillCloud} from "react-icons/ai"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='wrapper'>
+          <h1 className='diego'>DIEGO</h1>
+           <img src={diego} className="image" alt={""}></img>
+          <h1 className='text'>BiRTHDAY PARTY</h1>
+          <h3>FESTEGGiAMO iL 1° COMPLEANNO Di DiEGO! <br/> <br/>
+           FACCiAMO MERENDA iNSiEME E SPEGNiAMO LE CANDELiNE
+          </h3>
+          <div className='square'><p>21 Maggio 2023 <br/> Ore 16:30</p></div>
+          <div className='square'><p>Strada della Chiesa 29 <br/> Bannone, Traversetolo (Pr) </p></div>
+          <p className='cloud'>Se venite mandate un whatsapp a papà  <AiFillCloud style={{color:"black"}}/> </p>
+          <Confetti/>
+        </div>
     </div>
   );
 }
